@@ -17,8 +17,11 @@ RestartSec=5
 [Install]
 WantedBy=multi-user.target
 ```
+Reload the service:
+```
 sudo systemctl daemon-reload
 sudo systemctl enable --now arduino-clock.service
+```
 
 logs:
 ```
