@@ -7,10 +7,10 @@ def movimiento():
     print("Movement detected!")
 
 def despejado():
-    print("Zone cleaned")
+    print("Clean zone")
 
-pir.when_motion = movimiento
-pir.when_no_motion = despejado
+pir.when_motion = move,emt
+pir.when_no_motion = clean
 
 print("Waiting for movement")
 pause()
